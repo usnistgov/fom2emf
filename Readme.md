@@ -18,10 +18,9 @@ FOM2EMF is best used in conjuntion with SDS4EMF as a companion project.
     // Then we register our FOM2EMF specific package. 
     // We only need to do these two things once during a run. 
 
-    Deserialize.getResourceSet().getResourceFactoryRegistry().getExtensionToFactoryMap().put("xml",
-				new _2010ResourceFactoryImpl());
+    Deserialize.associateExtension"xml", new _2010ResourceFactoryImpl());
 
-    Deserialize.getResourceSet().getPackageRegistry().put(_2010Package.eNS_URI, _2010Package.eINSTANCE);
+    Deserialize.registerPackage(_2010Package.eNS_URI, _2010Package.eINSTANCE);
 
     // Now we can instantiate an object graph from a compliant file.
     // Compliant here means a fom file that conforms to the schema IEEE1516-DIF-2010.xsd.
