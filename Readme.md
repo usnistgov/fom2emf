@@ -3,8 +3,44 @@
 
 ### Usage: 
 
-FOM2EMF is best used in conjuntion with SDS4EMF as a companion project.
+FOM2EMF is depends on SDS4EMF as a companion project.
 
+The 0.0.2 snapshot has convenience methods that eliminate the boiler plate of the earlier version:
+    `
+    // Imported from FOM2EMF
+    import org.ieee.standards.ieee1516._2010.ObjectModelType;
+    import org.ieee.standards.ieee1516._2010._2010Package;
+    import org.ieee.standards.ieee1516._2010.util._2010ResourceFactoryImpl;
+    `
+    
+    To instantiate a fom graph from a fom file:
+    `
+    DocumentRoot root = FOM.deserialize(<fullpath-to-a-fom.xml>);
+    `
+    
+    To obtain a string from a fom graph:
+    `
+    String s = FOM.serialize(<a DocumentRoot object>);
+    `
+    
+### Dependencies:
+
+    `
+    <dependencies>
+        <dependency>
+            <groupId>gov.nist.hla</groupId>
+            <artifactId>fom2emf</artifactId>
+            <version>0.0.2-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>gov.nist.emf</groupId>
+            <artifactId>sds4emf</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        ... Additional dependencies ...
+    </dependencies>
+    
+If using 0.0.1 snapshot:
     `
     // Imported from FOM2EMF
     import org.ieee.standards.ieee1516._2010.ObjectModelType;
