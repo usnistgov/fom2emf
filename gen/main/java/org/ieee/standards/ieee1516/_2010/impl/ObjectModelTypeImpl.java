@@ -3,10 +3,12 @@
 package org.ieee.standards.ieee1516._2010.impl;
 
 import java.lang.String;
+
 import java.util.List;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
+
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
