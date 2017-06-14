@@ -1,6 +1,7 @@
 package fom2emf;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
 import java.io.File;
 
@@ -15,16 +16,11 @@ public class FOMTest {
 	}
 
 	@Test
-	public void testDeserialize() {
+	public void testDe_Serialize() {
 		DocumentRoot eObject = FOM.deserialize("fom/TripleFederation.xml");
 		assertNotNull(eObject);
 		String s = FOM.serialize(eObject);
 		assertNotNull(s);
 	}
-
-//	@Test
-//	public void testSerialize() {
-//		String sut = FOM.serialize(eObject);
-//	}
 
 }
