@@ -2,6 +2,7 @@ package fom2emf;
 
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
+import gov.nist.fom2emf.FOM;
 
 import java.io.File;
 
@@ -18,9 +19,9 @@ public class FOMTest {
 	@Test
 	public void testDe_Serialize() {
 		DocumentRoot eObject = FOM.deserialize("fom/TripleFederation.xml");
+		FOM.deserialize("fom/TripleFederation.xml");
 		assertNotNull(eObject);
 		String s = FOM.serialize(eObject);
 		assertNotNull(s);
 	}
-
 }
