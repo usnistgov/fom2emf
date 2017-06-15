@@ -40,10 +40,26 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.5.1</version>
 				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
+					<source>1.8</source>
+					<target>1.8</target>
 				</configuration>
 			</plugin>
 		</plugins>
+		<resources>
+			<resource>
+				<directory>src/main/java</directory>
+				<excludes>
+					<exclude>**/*.java</exclude>
+				</excludes>
+			</resource>
+		</resources>
+		<testResources>
+			<testResource>
+				<directory>src/test/java</directory>
+				<excludes>
+					<exclude>**/*.java</exclude>
+				</excludes>
+			</testResource>
+		</testResources>
 	</build>
 </project>
