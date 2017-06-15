@@ -5,9 +5,9 @@ import org.ieee.standards.ieee1516._2010.DocumentRoot;
 import org.ieee.standards.ieee1516._2010._2010Package;
 import org.ieee.standards.ieee1516._2010.util._2010ResourceFactoryImpl;
 
-import emf.sds.AbstractSerializeDeserialize;
-import emf.sds.Deserialize;
-import emf.sds.Serialize;
+import gov.nist.sds4emf.AbstractSerializeDeserialize;
+import gov.nist.sds4emf.Deserialize;
+import gov.nist.sds4emf.Serialize;
 
 public class FOM {
 

@@ -1,4 +1,4 @@
-package fom2emf;
+package gov.nist.fom2emf;
 
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
